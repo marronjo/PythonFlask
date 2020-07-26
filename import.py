@@ -12,7 +12,7 @@ db = SQLAlchemy(app)
 
 class users(db.Model):
     _id = db.Column("id", db.Integer, primary_key=True)
-    name = db.COlumn(db.String(100))
+    name = db.Column(db.String(100))
     email = db.Column(db.String(100))
 
     def __init__(self, name, email):
